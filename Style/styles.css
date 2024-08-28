@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(0,0,0);
+    background: linear-gradient(11deg, rgba(0,0,0,1) 65%, rgba(59,235,159,1) 100%);
+    color: #e0e0e0;
+    backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(150px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 20px;
+}    
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    color: #fff;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav .btn {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: .5rem;
+}
+
+nav .btn:hover {
+    background-color: rgba(59,235,159,1);
+}
+
+/* Sección 1: Texto y Video */
+.section-text-video {
+    display: flex;
+    padding: 80px 40px;
+    border-bottom: 1px solid #333;
+}
+
+.section-text-video .text-content {
+    flex: 1;
+    padding-right: 25px;
+}
+
+.section-text-video .text-content h1 {
+    font-size: 3.5em;
+    color: rgba(59,235,159,1);
+    text-align: center;
+}
+
+.highlight {
+    color: #fff;
+}
+
+.section-text-video .text-content p {
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+}
+
+.section-text-video .video-content {
+    flex: 1;
+}
+
+.section-text-video .video-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Sección 2: Carrusel de Imágenes */
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 40px;
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 6px;
+    margin: 10px;
+    width: 30%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.carousel-item img {
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+
+.card-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-description h4 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.card-description p {
+    font-size: 1.2em;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.card-description a:hover {
+    color: #e65c00;
+}
+
+/* Sección 3: Información de Empleados */
+.team {
+    padding: 60px 20px; /* Reducir el padding para ajustar el tamaño del bloque */
+    text-align: center;
+    border-bottom: 1px solid #333;
+    background: linear-gradient(135deg, rgba(59,235,159,0.1), rgba(59,235,159,0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(59, 235, 159, 0.2);
+}
+
+.employee-card {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    text-align: center;
+}
+
+.employee-card img {
+    width: 60%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.employee-card h3 {
+    margin-top: 10px;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.employee-card p {
+    font-size: 1em;
+    color: #b0b0b0;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: #b0b0b0;
+}
+
+footer .contact-info, footer .social-media {
+    width: 45%;
+}
+
+footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #fff(59,235,159,1);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer .social-media a img {
+    width: 35px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media a img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
